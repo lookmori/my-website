@@ -1,0 +1,13 @@
+.block_image {
+  display: block;
+
+}
+.inline_image {
+  display: inline;
+}
+.w_full {
+  width: max-content;
+}
+.h_full {
+  height: 100%;
+}
