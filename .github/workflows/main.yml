@@ -21,12 +21,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
       # 环境检查
       - uses: actions/setup-node@v3.3.0
         # 具体要求
         with:
-          node-version: 17
+          node-version: 18
       # 步骤描述信息
       - name: npm install
 
