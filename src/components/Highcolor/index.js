@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Highcolor({children, color,textColor='#fff'}) {
+export default function Highcolor({children, color='#fff',textColor='#205d3b'}) {
   return (
     <span
       style={{
