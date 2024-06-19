@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "lookmori",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "My Site Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Mixly": {
+    "message": "Mixly",
+    "description": "Navbar item with label Mixly"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.LEGO": {
+    "message": "LEGO",
+    "description": "Navbar item with label LEGO"
+  }
+}
