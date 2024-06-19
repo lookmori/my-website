@@ -1,0 +1,53 @@
+# 部署名字
+
+name: CI
+
+# 控制触发动作
+on:
+  # 在 master分支 push 时 触发
+  push:
+    branches: ["main"]
+
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # 具体步骤
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # 环境检查
+      - uses: actions/setup-node@v3.3.0
+        # 具体要求
+        with:
+          node-version: 17
+      # 步骤描述信息
+      - name: npm install
+
+        # 步骤 的具体操作
+        run: npm install
+
+      - name: build
+        run: npm run build
+
+      # 部署到服务器
+      - name: SFTP Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          # username
+          username: "root"
+          # `${{}}` 变量 保存在 setting/secrets/actions
+          server: "${{secrets.SERVER_IP}}"
+
+          ssh_private_key: "${{secrets.SERVER_SSH}}"
+          # 将项目那些文件上传到服务器
+          local_path: "./build/*"
+          # 上传到服务器的那个目录下
+          remote_path: "/www/wwwroot/mixly"
+          password: "${{secrets.SERVER_PASSWORD}}"
