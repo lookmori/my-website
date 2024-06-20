@@ -1,5 +1,5 @@
 ---
-to: docs/Mixly/<%= name %>.mdx
+to: docs/Mixly/考级真题/<%= name %>.mdx
 ---
 
 

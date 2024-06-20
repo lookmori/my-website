@@ -1,42 +1,26 @@
-# Website
+## 我的博客
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+![home](/static/img/home.png)
 
-### Installation
 
-```
-$ yarn
-```
+### 构建
 
-### Local Development
+`Docusaurus`
 
-```
-$ yarn start
-```
+### 目录结构
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+![struct](/static//img/struct.png)
 
-### Build
+`_templates`模版，模版使用`hygen`
+`docs`文档
+`blog`博客
+`static`静态资源目录
+`src`组件
+`.hygen.js`模版配置函数文件
 
-```
-$ yarn build
-```
+### 其他
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+* 字体全名 `曉聲通秋茄`
 
-### Deployment
+[找字体](https://zfont.cn/?t=1&p=1)
 
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
-# my-website
