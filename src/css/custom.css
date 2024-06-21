@@ -28,8 +28,10 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
-
-@font-face {
+* {
+  letter-spacing: 3px;
+}
+/* @font-face {
   font-family: 'ToneOZ-Tsuipita-TC';
   src: url('/font/ToneOZ-Tsuipita-TC.ttf');
 }
@@ -39,4 +41,4 @@
 }
 h1,h2,h3,h4,a{
   font-family: 'ToneOZ-Tsuipita-TC';
-}
+} */
