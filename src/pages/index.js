@@ -6,7 +6,6 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
-
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -23,6 +22,7 @@ function HomepageHeader() {
             lookmori ⏱️
           </Link>
         </div>
+
       </div>
     </header>
   );
@@ -38,6 +38,7 @@ export default function Home() {
       <main>
         <HomepageFeatures />
       </main>
+ 
     </Layout>
   );
 }
