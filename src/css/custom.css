@@ -42,3 +42,11 @@
 h1,h2,h3,h4,a{
   font-family: 'ToneOZ-Tsuipita-TC';
 } */
+
+.arduino {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale:1.25;
+}

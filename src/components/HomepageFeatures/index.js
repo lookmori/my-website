@@ -2,12 +2,8 @@ import clsx from "clsx";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-    
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import DocusaurusSvg from "/static/img/home_arduino.svg";
-import { useEffect } from "react";
+
+
 const FeatureList = [
   {
     title: "Mixly",
@@ -45,27 +41,7 @@ function Feature({ Svg, title, description }) {
 }
 
 export default function HomepageFeatures() {
-  gsap.registerPlugin(useGSAP,ScrollTrigger);
-  useGSAP(() => {
-    gsap.fromTo('.container', {
-      scrollTrigger: '.hero',
-      x:-500,
-      duration: 2,
-    },{
-      scrollTrigger: '.hero', // start the animation when ".box" enters the viewport (once)
-      x: 0,
-      ease: "bounce.out",
-  });
 
-    // t1.to('#svg',{
-    //   opacity:1,
-    //   x:700,
-    //   duration:2000,
-    //   delay:1000,
-    //   rotation: 360
-    // })
-
-  })
   return (
     <section className={styles.features}>
       {/* <div className={styles.ani}>
@@ -78,6 +54,7 @@ export default function HomepageFeatures() {
           ))}
         </div>
       </div>
+
     </section>
   );
 }

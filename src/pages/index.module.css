@@ -8,7 +8,8 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  height: 700px;
+  height: calc(100vh - 4rem);
+  /* background:no-repeat url('/static/img/animation.svg') ; */
 }
 
 @media screen and (max-width: 996px) {
