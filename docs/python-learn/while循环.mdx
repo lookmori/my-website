@@ -1,0 +1,77 @@
+---
+sidebar_position: 5
+toc_min_heading_level: 2
+toc_max_heading_level: 5
+---
+
+### 如何实现打印从1到1000
+
+```python
+print(1)
+print(2)
+print(3)
+print(4)
+print(5)
+...
+
+```
+
+如果按照这种写法，岂不是要累死人😭。那么有没有快速的办法？这就是我们今天用到的`循环`，循环有多个，今天我们先使用`while循环`
+
+### while循环
+
+:::info
+
+> while+条件:
+
+> 可以理解为: `当` `条件` 为 `真` 时
+
+`条件`的结果只有两个 `真(True)`，`假(False)`
+
+* 注意缩进，带有冒号:的下一行都需要缩进
+
+:::
+
+示例代码：
+
+```python
+#声明变量number并赋值为1
+ number = 1
+
+ #当变量number小于10时
+ while number < 10:
+  #打印变量number
+  print(number)
+  #变量number在原来的基础上 +1
+  number = number + 1
+```
+
+💡如何打印无限打印一句话比如：`是非成败转头空`
+
+
+> 在上边我们说过，`while`后边是条件，而条件的结果只有`真`和`假`。那么我们是否可以直接将条件设置为`真True`?
+
+示例代码：
+```python
+while True:
+  print('是非成败转头空')
+```
+
+在这两个示例代码，可以看到两个不同的需求。`while循环`可以分为`有限次循环(条件有结束的时候)`和`无限次循环(条件没有结束的时候)`
+
+## 总结
+
+#### ♻️ while 循环
+* 有限次循环(条件有结束的时候)
+```python
+  num = 1
+  while num < 10:
+    print(num)
+    num = num +1
+```
+* 无限次循环(条件没有结束的时候)
+
+```python
+while True:
+  print('我是无限循环')
+```
