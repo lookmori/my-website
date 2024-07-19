@@ -53,6 +53,8 @@ if age > 18 :
 :::
 
 
+
+
 <details>
 <summary>实现一个小游戏：让你的朋友输入他喜欢的水果🍉，你来猜。如果猜对打印`我真厉害`，如果猜错就打印`我猜错了`</summary>
 ```python
@@ -96,4 +98,33 @@ else:
 
 ```
 </details>
+
+
+### 数据类型
+
+```python
+
+num = 1
+
+str_num = '1'
+
+if str_num == num:
+  print('我们两个相等')
+else:
+  print('我们两个不相等')
+
+```
+
+> 大家觉得上边的代码会打印什么内容哪？
+> * 最终打印的是 *'我们两个不相等'*。因为num是整数(int)，而str_num是字符串(str)。它们两个类型并不相同。要查看它们的类型我们可以使用`python`中的`type函数`
+
+```python
+#<class 'int'>
+print(type(num))
+
+#<class 'str'>
+print(type(str_num))
+```
+
+
 
