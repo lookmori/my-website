@@ -15,12 +15,10 @@ export default function DocItem(props) {
           <MDXComponent />
           <Giscus
             id="comments"
-            repo="lookmori/blog"
-            repoId="R_kgDOMG9pSA"
-            category="Announcements"
-            categoryId="DIC_kwDOF1L2fM4B-hVS"
-            mapping="title"
-            term=""
+            repo="lookmori/my-website"
+            repoId="R_kgDOMJTggg"
+            mapping="pathname"
+            term="Welcome to @giscus/react component!"
             reactionsEnabled="1"
             emitMetadata="0"
             inputPosition="top"
