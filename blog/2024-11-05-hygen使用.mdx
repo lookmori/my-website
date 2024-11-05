@@ -1,0 +1,58 @@
+---
+authors: [me]
+tags: [hygen]
+description: 请输入描述
+title: hygen使用
+---
+### 建立模板
+
+``` shell
+hygen generator new awesome-generator
+```
+#### 示例
+```shell
+hygen generator new blog
+```
+
+### 修改模板文件
+
+找到生成的模板ejs.t文件
+
+```js
+---
+to: blog/<%= h.date() %>-<%= name %>.mdx
+---
+
+---
+authors: [shouren]
+tags: []
+description: 请输入描述
+title: <%= name %>
+---
+
+```
+
+:::tip
+to 指定生成的文件存放位置
+
+```js
+<%= name %>
+```
+
+这里name是变量，在使用模板是 指定文件名字
+h.date() 是全局函数，在文件根目录下创建`.hygen.js`,内容如下
+```js
+module.exports = {
+  helpers: {
+      date: () => new Date().toISOString().slice(0, 10),    
+  }
+}
+```
+:::
+
+
+### 使用
+
+```js
+hygen blog new --name 这是标题
+```
